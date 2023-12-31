@@ -21,3 +21,8 @@ body {
   background-color: transparent !important;
   color: black !important;
 }
+
+.rounded-carousel {
+  border-radius: 15px;
+  overflow: hidden;
+}

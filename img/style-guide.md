@@ -25,3 +25,5 @@ The designs were created to the following widths:
 
 - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
 - Weights: 500, 700
+
+Features Company Careers About

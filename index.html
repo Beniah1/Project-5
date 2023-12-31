@@ -13,16 +13,21 @@
     />
     <!-- css link  -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- bootstrap icons link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <!-- Header Section  -->
     <header>
       <nav>
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg bg-transparent">
           <div class="container">
             <!-- logo -->
-            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <span class="fw-bold fs-3">Drop Down</span>
             <button
               class="navbar-toggler shadow-none border-0"
               type="button"
@@ -35,20 +40,26 @@
               <!-- Toggle btn -->
             </button>
             <!-- offcanvas sidebar-->
+
+            <!-- use offcanvas-start for the sidebar to appear on the left side of the screen and use offcanvas-end for the sidebar to appear on the right side of the screen. -->
+            <!-- to change the width of the sidebar, change the w-50 class to w-25 or w-75 or w-100 -->
             <div
-              class="offcanvas offcanvas-end sidebar"
+              class="offcanvas offcanvas-end sidebar w-50"
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
               <!-- offcanvas header-->
               <div class="offcanvas-header text-white border-bottom">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
+                <h5
+                  class="offcanvas-title text-black"
+                  id="offcanvasNavbarLabel"
+                >
+                  Drop Down
                 </h5>
                 <button
                   type="button"
-                  class="btn-close btn-close-white shadow-none"
+                  class="btn-close shadow-none"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></button>
@@ -56,33 +67,93 @@
               <!-- offcanvas body-->
 
               <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <ul
+                  class="navbar-nav justify-content-start flex-grow-1 fs-6 pe-3"
+                >
                   <li class="nav-item mx-2">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
+                    <div class="dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="featuresDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Features
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="featuresDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="bi bi-list-task mx-1"></i> Todo List
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="bi bi-calendar mx-1"></i>Calendar</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="bi bi-calendar-x mx-1"></i>Reminders</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="bi bi-send-arrow-up-fill mx-1"></i
+                            >Planning</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#About">About</a>
+                    <div class="dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="companyDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Company
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="companyDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">History</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Our Team</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#Contact">Contact</a>
+                    <a class="nav-link" href="#Contact">Careers</a>
                   </li>
                   <li class="nav-item mx-2">
                     <a class="nav-link" href="#About">About</a>
                   </li>
                 </ul>
+                <!-- login and signup btn -->
                 <div
-                  class="d-flex justify-content-center align-items-center gap-3"
+                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
                 >
-                  <a href="#Login" class="text-white text-decoration-none"
+                  <a href="#Login" class="text-black text-decoration-none"
                     >Login</a
                   >
+                  <!-- w-100 text-center is for the btn to take the full width of the parent element -->
                   <a
-                    class="text-white text-decoration-none px-3 py-1 rounded-2 border-danger-subtle border-3"
-                    style="border: 3px solid #f94ca4"
+                    class="text-black px-3 py-1 rounded-2 border-dark-subtle border-3 w-100 text-center text-decoration-none"
+                    style="border: 8px solid #ffdc15"
                     href="#"
-                    >Sign Up</a
+                    >Register</a
                   >
                 </div>
               </div>
@@ -93,6 +164,24 @@
     </header>
 
     <!-- Main Content -->
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="fw-bold" style="margin-top: 25%; font-size: 5em; letter-spacing: -3px;line-height: 70px;">
+                Make <span class="d-block"> remote work </span>
+              </h1>
+              <p style="margin-top: 10%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem nulla nobis provident optio quis dolorum non debitis architecto, quae </p>
+            </div>
+            <div class="col-6">
+              <h1 class="text-center">Main Content</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <main>
       <section>
         <article>

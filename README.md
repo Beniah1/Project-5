@@ -27,5 +27,3 @@ Basic information, links and contact details are also available without needing 
 ## Usage Rights 📄
 
 TelecommuteToday is copyright 2023. Please check their website for the latest privacy and terms of service policies. 📋
-
-That covers the key sections and information provided in the URL index.html page. Let me know if any part of the readme needs further explanation or expansion. 🙂
